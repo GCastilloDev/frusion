@@ -4,12 +4,12 @@
     <v-spacer></v-spacer>
     <v-btn text class="d-none d-sm-flex">
       <v-badge dot color="secondary">
-        <v-icon class="app-bar--icon">mdi-account-outline</v-icon>Iniciar sesión
+        <v-icon class="app-bar--icon">mdi-account-arrow-right-outline</v-icon>Iniciar sesión
       </v-badge>
     </v-btn>
     <v-btn text class="d-flex d-sm-none">
       <v-badge dot color="secondary">
-        <v-icon class="app-bar--icon">mdi-account-outline</v-icon>
+        <v-icon class="app-bar--icon">mdi-account-arrow-right-outline</v-icon>
       </v-badge>
     </v-btn>
     <v-btn text>

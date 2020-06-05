@@ -1,9 +1,17 @@
+<!-- 
+Vista de la página de inicio con sus componentes.
+-->
 <template>
   <div class="home">
+    <!-- Banner de la página principal -->
     <v-img
     class="banner"
     src="../assets/img/banner.png">
     </v-img>
+    <!-- Componente de secciones -->
+    <Section />
+    <Section />
+    <Section />
   </div>
 </template>
 
@@ -11,10 +19,7 @@
 export default {
   name: "Inicio",
   components: {
-
-  },
-  created() {
-    console.log(window.screen.width);
+    Section: () => import ('../components/section/Section')
   }
 };
 </script>

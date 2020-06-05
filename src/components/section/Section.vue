@@ -7,21 +7,34 @@ en caso de que tenga mas elementos que mostrar, y un objeto con
 los elementos para poder pintar las cards.
  -->
 <template>
-    <v-container>
-        <v-row>
-            <v-col cols="12">
-                <h2>Promociones de la semana</h2>
-            </v-col>
-        </v-row>
-    </v-container>
+  <v-container>
+    <v-row>
+      <v-col cols="12">
+        <h3>Promociones de la semana</h3>
+      </v-col>
+      <v-col
+       v-for="n in 4"
+       :key="n"
+       cols="3">        
+          <Card />
+      </v-col>
+      <v-col cols="12" class="d-flex justify-end">
+        <v-btn class="ma-2" depressed color="success">
+          Ver más
+          <v-icon right>mdi-menu-right</v-icon>
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  components: {
+    Card: () => import('./Card')
+  }
+};
 </script>
 
 <style lang="scss">
-
 </style>
