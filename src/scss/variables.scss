@@ -1,0 +1,17 @@
+/*
+    Archivo para reescribir el css de vuetify
+*/
+
+// Clases del tema light
+$material-light: (
+    'background': #F6F6F6,
+    'text': (
+        'primary': #434343,
+    )
+);
+
+// Fuente del proyecto
+$body-font-family: 'Open Sans', sans-serif;
+
+$btn-font-weight: 600 !default;
+$btn-text-transform: none !default;

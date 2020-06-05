@@ -6,23 +6,23 @@ Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
-      options: {
-        customProperties: true,
-      },
+    options: {
+      customProperties: true,
+    },
     themes: {
       light: {
-        primary: '#ee44aa',
-        secondary: '#424242',
+        primary: '#FFE200',
+        secondary: '#D91A2A',
         accent: '#82B1FF',
         error: '#FF5252',
         info: '#2196F3',
         success: '#4CAF50',
-        warning: '#FFC107'
+        warning: '#FFC107',
       },
     },
   },
-    lang: {
-      locales: { es },
-      current: 'es',
-    },
+  lang: {
+    locales: { es },
+    current: 'es',
+  },
 });
