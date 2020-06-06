@@ -1,6 +1,6 @@
 <template>
   <v-app-bar class="app-bar--personalizado" flat fixed extended color="primary">
-    <v-img class="app-bar--logo" src="../assets/img/frusion-logo.svg" max-width="132"></v-img>
+    <v-img class="app-bar--logo" src="../assets/img/frusion-logo.svg" max-width="100"></v-img>
     <v-spacer></v-spacer>
     <v-btn text class="d-none d-sm-flex">
       <v-badge dot color="secondary">

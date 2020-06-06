@@ -58,6 +58,10 @@ export default {
         this.quantityPiece = this.quantity;
         this.quantityMaskTop = this.quantity * this.weightPiece;
         this.quantityMaskBottom = this.quantity;
+        this.initializeQuantityGrams();
+    },
+    initializeQuantityGrams() {
+      this.quantityGrams = this.weightPiece;
     }
   },
   watch: {
