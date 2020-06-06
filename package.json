@@ -1,0 +1,23 @@
+{
+  "name": "frusion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copyDist": "copyfiles -u 1 ./frontend/dist/**/* ./backend/",
+    "deploy": "deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TavoGeek/frusion-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TavoGeek/frusion-frontend/issues"
+  },
+  "homepage": "https://github.com/TavoGeek/frusion-frontend#readme",
+  "devDependencies": {
+    "copyfiles": "^2.3.0"
+  }
+}

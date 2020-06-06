@@ -20,7 +20,13 @@
         </v-col>
       </v-row>
     </v-card-actions>
-    <v-snackbar top right v-model="showSnackBar">Producto agregado</v-snackbar>
+    <v-snackbar color="grey darken-3" right v-model="showSnackBar"><span class="font-weight-medium">Producto agregado</span> <v-btn
+        color="primary"
+        icon
+        @click="showSnackBar = false"
+      >
+      <v-icon>mdi-close</v-icon>
+      </v-btn>  </v-snackbar>
   </v-card>
 </template>
 
