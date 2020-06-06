@@ -8,14 +8,14 @@
     <v-card-text class="d-flex justify-center">
       <strong>$29.90/kg</strong>
     </v-card-text>
-    <v-card-actions>
+    <v-card-actions class="card-actions-size">
       <v-row>
-        <v-col cols="12">
+        <v-col v-if="!showBtnCustomized" @click="showBtnCustomized = true" cols="12">
           <v-btn block depressed color="success">
             <v-icon left>mdi-cart-plus</v-icon>Agregar
           </v-btn>
         </v-col>
-        <v-col cols="12">
+        <v-col v-if="showBtnCustomized" cols="12">
           <BtnCustomized />
         </v-col>
       </v-row>
@@ -26,7 +26,7 @@
 <script>
 export default {
   data: () => ({
-    valor: 1,
+    showBtnCustomized: false
   }),
   components: {
     BtnCustomized: () => import("./BtnCustomized")
@@ -43,11 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.btn-minus {
-  padding-right: 3rem;
-}
-
-.btn-plus {
-  padding-left: 3rem;
+.card-actions-size {
+  height: 88px;
 }
 </style>
