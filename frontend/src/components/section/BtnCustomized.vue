@@ -39,22 +39,22 @@ export default {
     plus() {
       if (this.quantity < this.limit) this.quantity++;
       this.quantityChange();
-      this.maksTopChange();
+      this.changeMasks();
     },
     minus() {
       if (this.quantity >= 1) this.quantity--;
       this.quantityChange();
-      this.maksTopChange();
+      this.changeMasks();
     },
     quantityChange() {
         this.quantityPiece = this.quantity;
         this.quantityGrams = this.quantity * this.weightPiece;
     },
-    maksTopChange() {
+    changeMasks() {
         this.quantityMaskTop = this.pieceType ? this.quantityGrams : this.quantityPiece;
         this.quantityMaskBottom = this.pieceType ? this.quantityPiece : this.quantityGrams;
     },
-    masked() {
+    masking() {
         this.quantityPiece = this.quantity;
         this.quantityMaskTop = this.quantity * this.weightPiece;
         this.quantityMaskBottom = this.quantity;
@@ -73,7 +73,7 @@ export default {
       }
   },
   created() {
-        this.masked();
+        this.masking();
   }
 };
 </script>

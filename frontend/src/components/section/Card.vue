@@ -10,7 +10,7 @@
     </v-card-text>
     <v-card-actions class="card-actions-size">
       <v-row>
-        <v-col v-if="!showBtnCustomized" @click="showBtnCustomized = true" cols="12">
+        <v-col v-if="!showBtnCustomized" @click="showAll" cols="12">
           <v-btn block depressed color="success">
             <v-icon left>mdi-cart-plus</v-icon>Agregar
           </v-btn>
@@ -19,24 +19,24 @@
           <BtnCustomized />
         </v-col>
       </v-row>
-    </v-card-actions>      
+    </v-card-actions>
+    <v-snackbar top right v-model="showSnackBar">Producto agregado</v-snackbar>
   </v-card>
 </template>
 
 <script>
 export default {
   data: () => ({
-    showBtnCustomized: false
+    showBtnCustomized: false,
+    showSnackBar: false
   }),
   components: {
     BtnCustomized: () => import("./BtnCustomized")
   },
   methods: {
-    minus() {
-      this.valor--;
-    },
-    plus() {
-      this.valor++;
+    showAll() {
+      this.showBtnCustomized = true;
+      this.showSnackBar = true;
     }
   }
 };
