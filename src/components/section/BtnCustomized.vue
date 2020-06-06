@@ -5,7 +5,7 @@
         <v-col @click="minus" class="btn-customized--minus" cols="4">
           <v-icon color="success">mdi-minus</v-icon>
         </v-col>
-        <v-col class="grey--text text--darken-3" cols="4">{{quantityMaskTop}} {{unityTop}}</v-col>
+        <v-col class="grey--text text--darken-3 col-text" cols="4">{{quantityMaskTop}} {{unityTop}}</v-col>
         <v-col @click="plus" class="btn-customized--plus" cols="4">
           <v-icon color="success">mdi-plus</v-icon>
         </v-col>
@@ -82,5 +82,10 @@ export default {
 .btn-customized--minus,
 .btn-customized--plus {
   cursor: pointer;
+}
+
+.col-text {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 </style>
