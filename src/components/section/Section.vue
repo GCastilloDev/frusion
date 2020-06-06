@@ -10,12 +10,13 @@ los elementos para poder pintar las cards.
   <v-container>
     <v-row>
       <v-col cols="12">
-        <h3>Promociones de la semana</h3>
+        <h2>Promociones de la semana</h2>
       </v-col>
       <v-col
        v-for="n in 4"
        :key="n"
-       cols="3">        
+       cols="6"
+       md="3">        
           <Card />
       </v-col>
       <v-col cols="12" class="d-flex justify-end">
