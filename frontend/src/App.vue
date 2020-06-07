@@ -11,7 +11,6 @@
 <script>
 export default {
   name: "App",
-
   components: {
     NavBar: () => import("./components/NavBar")
   },
@@ -24,7 +23,7 @@ export default {
 
 <style lang="scss">
 .contenido {
-  margin-top: 110px;
+  margin-top: 0px;
   min-height: 120vh;
 }
 </style>

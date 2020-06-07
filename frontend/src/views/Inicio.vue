@@ -26,6 +26,12 @@ export default {
 
 <style lang="scss">
 .banner {
-  margin-top: -7px;
+  margin-top: 126px;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    margin-top: 185px;
+  }
 }
 </style>
