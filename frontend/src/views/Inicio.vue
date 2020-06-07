@@ -31,7 +31,7 @@ export default {
 
 @media (max-width: 600px) {
   .banner {
-    margin-top: 185px;
+    margin-top: 150px;
   }
 }
 </style>
