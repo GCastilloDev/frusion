@@ -71,7 +71,7 @@ export default {
 }
 
 .container--customized {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .button-customized--top {
