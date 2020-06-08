@@ -9,6 +9,12 @@ app.get('/api/v1/', (req, res) => {
   res.json('Iniciado!');
 })
 
+// Importing routes
+const cityRoutes = require('./src/apps/city/routes/cityRoutes');
+
+// Routes
+app.use('/api/v1/city/', cityRoutes);
+
 serverInit = async () => {
   await conectDB();
   app.listen(process.env.PORT, () => {
