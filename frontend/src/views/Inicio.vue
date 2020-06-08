@@ -12,6 +12,8 @@ Vista de la página de inicio con sus componentes.
     <Section />
     <Section />
     <Section />
+    <!-- Modal para seleccionar ciudades -->
+    <SelectCity />
   </div>
 </template>
 
@@ -19,7 +21,8 @@ Vista de la página de inicio con sus componentes.
 export default {
   name: "Inicio",
   components: {
-    Section: () => import ('../components/section/Section')
+    Section: () => import ('../components/section/Section'),
+    SelectCity: () => import('../components/modales/SelectCity')
   }
 };
 </script>

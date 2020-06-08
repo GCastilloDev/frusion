@@ -82,7 +82,7 @@ export default {
 
 .menu {
   position: fixed;
-  z-index: 999;
+  z-index: 1;
   width: 100%;
 }
 </style>
