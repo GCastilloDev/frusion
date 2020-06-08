@@ -12,7 +12,7 @@
             </v-badge>
           </v-btn>
           <v-btn text class="button-customized--top">
-            <v-icon class="app-bar--icon">mdi-map-marker-outline</v-icon>San Cristobal
+            <v-icon class="app-bar--icon">mdi-map-marker-outline</v-icon>{{city}}
           </v-btn>
           <v-btn text class="button-customized--top">
             <v-badge color="secondary" content="10">
@@ -36,12 +36,17 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   props: {
     menu: {
       type: Array,
       required: true
     }
+  },
+  computed: {
+    ...mapState('app',['city'])
   }
 };
 </script>

@@ -17,7 +17,7 @@
                 placeholder="Seleccione una ciudad"
                 item-color="success"
                 color="success"
-                v-model="selectedCity"
+                v-model="city"
                 :items="cities"
                 ></v-select>
               </v-col>
@@ -33,7 +33,7 @@
               color="success"
               depressed
               block
-              @click="show = false">Continuar</v-btn>
+              @click="next">Continuar</v-btn>
           </v-container>
         </v-card-actions>
       </v-card>
@@ -42,15 +42,18 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 export default {
   data: () => ({
     show: true,
-    selectedCity: null,
+    city: null,
     cities: ["San Cristóbal de las Casas", "Tuxtla Gutiérrez"]
   }),
   methods: {
-    startSession() {
-      alert("Click");
+    ...mapActions('app',['selectedCity']),
+    next() {
+      this.selectedCity(this.city);
+      this.show = false;
     }
   }
 };
