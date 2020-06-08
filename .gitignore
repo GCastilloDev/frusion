@@ -5,6 +5,7 @@ backend/node_modules
 backend/dist
 
 # local env files
+.env
 .env.local
 .env.*.local
 
